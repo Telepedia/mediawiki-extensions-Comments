@@ -745,7 +745,6 @@ class Comment extends ContextSource {
 		// Blocked users cannot vote, obviously
 		if (
 			$user->getBlock() ||
-			$user->isBlockedGlobally() ||
 			!$user->isAllowed( 'comment' )
 		) {
 			return '';
