@@ -494,7 +494,7 @@ class CommentsPage extends ContextSource {
 		$userContext = $context->getUser();
 		$language = $context->getLanguage();
 		$ip = $context->getRequest()->getIP();
-		$errorFormatter = MediaWikiServices::getInstance()->getBlockErrorFormatter();
+		$errorFormatter = MediaWikiServices::getFormatterFactory()->getBlockErrorFormatter();
 
 		// Check users block status
 		if ( $user->getBlock() ) {
