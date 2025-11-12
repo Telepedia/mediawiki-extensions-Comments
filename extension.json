@@ -17,9 +17,6 @@
 	},
 	"callback": "CommentsHooks::registerExtension",
 	"GroupPermissions": {
-		"*": {
-			"comment": true
-		},
 		"commentadmin": {
 			"commentadmin": true
 		},
